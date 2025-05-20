@@ -54,12 +54,25 @@ namespace Sidequest {
 
 		// UPDATE
 		void ServerQuest::update_on_database() {
+			Query query(database, "UPDATE quest SET caption = ?, parent_id = ? WHERE id = ?;");
+			query.bind(1, caption);
+			query.bind(2, parent ? static_cast<unsigned int>(parent->id) : 0);
+			query.bind(3, id);
+
+			if (!query.step_done()) {
+				throw UnableToUpdateObjectException(std::to_string(id));
+			}
 			
 		}
 
 		// DELETE
 		void ServerQuest::delete_on_database() {
-			
+			Query query(database, "DELETE FROM quest WHERE id = ?;");
+			query.bind(1, id);
+
+			if (!query.step_done()) {
+				throw UnableToDeleteObjectException(std::to_string(id));
+			}
 		}
 
 
