@@ -34,3 +34,4 @@
 
 # Build data ignore
 out/
+.vs/
