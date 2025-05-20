@@ -48,3 +48,4 @@ out/
 *.user
 *.cache
 *.dbapplication_root/sidequest.db
+out/
