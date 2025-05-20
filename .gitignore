@@ -47,4 +47,4 @@ out/
 *.suo
 *.user
 *.cache
-*.db
+*.dbapplication_root/sidequest.db
