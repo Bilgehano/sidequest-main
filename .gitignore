@@ -34,4 +34,17 @@
 
 # Build data ignore
 out/
+
+# Visual Studio cache
 .vs/
+*.ipch
+*.VC.db
+*.VC.VC.opendb
+*.obj
+*.pch
+*.tlog
+*.log
+*.suo
+*.user
+*.cache
+*.db
