@@ -11,16 +11,16 @@
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
+# Compiled Dynamic Libraries
 *.so
 *.dylib
 *.dll
 
-# Fortran module files
+# Fortran Module files
 *.mod
 *.smod
 
-# Compiled Static libraries
+# Compiled Static Libraries
 *.lai
 *.la
 *.a
@@ -31,21 +31,20 @@
 *.out
 *.app
 
-
-# Build data ignore
+# Build Output
 out/
 
-# Visual Studio cache
+# Local Database
+application_root/sidequest.db
+
+# Visual Studio Cache and User Files
 .vs/
 *.ipch
 *.VC.db
 *.VC.VC.opendb
-*.obj
-*.pch
 *.tlog
 *.log
 *.suo
 *.user
 *.cache
-*.dbapplication_root/sidequest.db
-out/
+*.db
