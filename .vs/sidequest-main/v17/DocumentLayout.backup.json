@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\model\\server_quest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\.vs\\launch.vs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\launch.vs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\model\\server_quest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\model\\server_user.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\model\\server_user.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\sidequest\\model\\quest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\sidequest\\model\\quest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\storage\\database.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\application_root\\create_database.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:application_root\\create_database.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\user.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\sidequest\\model\\user.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\storage\\query.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\storage\\query.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\server\\storage\\database.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "launch.vs.json",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\.vs\\launch.vs.json",
+              "RelativeDocumentMoniker": ".vs\\launch.vs.json",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\.vs\\launch.vs.json",
+              "RelativeToolTip": ".vs\\launch.vs.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T15:10:56.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "server_quest.h",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.h",
+              "RelativeDocumentMoniker": "src\\server\\model\\server_quest.h",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.h",
+              "RelativeToolTip": "src\\server\\model\\server_quest.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T15:02:42.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "server_quest.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.cpp",
+              "RelativeDocumentMoniker": "src\\server\\model\\server_quest.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_quest.cpp",
+              "RelativeToolTip": "src\\server\\model\\server_quest.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAD0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T15:02:31.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "server_user.h",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.h",
+              "RelativeDocumentMoniker": "src\\server\\model\\server_user.h",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.h",
+              "RelativeToolTip": "src\\server\\model\\server_user.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T15:01:31.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "server_user.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.cpp",
+              "RelativeDocumentMoniker": "src\\server\\model\\server_user.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\model\\server_user.cpp",
+              "RelativeToolTip": "src\\server\\model\\server_user.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T15:00:26.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "database.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.cpp",
+              "RelativeDocumentMoniker": "src\\server\\storage\\database.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.cpp",
+              "RelativeToolTip": "src\\server\\storage\\database.cpp",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAcwJkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T14:56:52.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "quest.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.cpp",
+              "RelativeDocumentMoniker": "src\\sidequest\\model\\quest.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.cpp",
+              "RelativeToolTip": "src\\sidequest\\model\\quest.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T14:59:30.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "quest.h",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.h",
+              "RelativeDocumentMoniker": "src\\sidequest\\model\\quest.h",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\quest.h",
+              "RelativeToolTip": "src\\sidequest\\model\\quest.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T14:59:33.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "create_database.sql",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\application_root\\create_database.sql",
+              "RelativeDocumentMoniker": "application_root\\create_database.sql",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\application_root\\create_database.sql",
+              "RelativeToolTip": "application_root\\create_database.sql",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-20T15:06:15.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "user.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\user.cpp",
+              "RelativeDocumentMoniker": "src\\sidequest\\model\\user.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\sidequest\\model\\user.cpp",
+              "RelativeToolTip": "src\\sidequest\\model\\user.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T14:59:36.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "query.h",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.h",
+              "RelativeDocumentMoniker": "src\\server\\storage\\query.h",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.h",
+              "RelativeToolTip": "src\\server\\storage\\query.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T14:58:50.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "query.cpp",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.cpp",
+              "RelativeDocumentMoniker": "src\\server\\storage\\query.cpp",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\query.cpp",
+              "RelativeToolTip": "src\\server\\storage\\query.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-20T14:58:38.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "database.h",
+              "DocumentMoniker": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.h",
+              "RelativeDocumentMoniker": "src\\server\\storage\\database.h",
+              "ToolTip": "C:\\Users\\Bilgehan\\Desktop\\Software_E\\sidequest-main\\src\\server\\storage\\database.h",
+              "RelativeToolTip": "src\\server\\storage\\database.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-20T14:57:38.869Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
