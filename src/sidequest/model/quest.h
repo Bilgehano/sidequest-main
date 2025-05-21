@@ -11,6 +11,7 @@ namespace Sidequest
 		typedef unsigned long Id;
 
 		Quest();
+		Quest(Id id, std::string caption, Quest* parent,std::vector<Quest*> subquests );
 		~Quest();
 
 		Id id;

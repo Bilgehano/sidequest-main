@@ -10,7 +10,8 @@ namespace Sidequest {
 		}
 
 		ServerQuest::ServerQuest(Database* database, Id id)
-			: Persistable(database) {
+			: Persistable(database) 
+		{
 			this->id = id;
 		}
 
