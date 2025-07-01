@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 
+#include "id.h"
+
 namespace Sidequest
 {
 	class Quest;
@@ -10,10 +12,11 @@ namespace Sidequest
 	class User {
 	public:
 		User();
-		User(std::string email);
+		User(Id id);
 		User(std::string email, std::string display_name, std::string password);
-		~User();
+		virtual ~User();
 
+		Id id;
 		std::string display_name;
 		std::string email;
 		std::string password;

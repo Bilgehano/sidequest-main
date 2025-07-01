@@ -1,88 +1,119 @@
 #include "server_quest.h"
-#include "storage/query.h"
-#include "storage/database.h"
 
-namespace Sidequest {
-	namespace Server {
+#include "storage/database.h"
+#include "server_user.h"
+
+namespace Sidequest 
+{
+	namespace Server 
+	{
 
 		ServerQuest::ServerQuest(Database* database)
-			: Persistable(database) {
+			: Persistable(database)
+			, SerialisableQuest()
+		{
 		}
 
 		ServerQuest::ServerQuest(Database* database, Id id)
-			: Persistable(database) 
+			: Persistable(database)
+			, SerialisableQuest(id)
 		{
-			this->id = id;
 		}
 
-		ServerQuest::ServerQuest(Database* database, const std::string& caption, Quest* parent)
-			: Persistable(database) {
-			this->caption = caption;
-			this->parent = parent;
-			this->id = 0; // noch nicht gesetzt
+		ServerQuest::ServerQuest(Database* database, Status status, std::string title, std::string description, ServerUser* owner, ServerUser* editor, Quest* parent)
+			: Persistable(database)
+			, SerialisableQuest( status, title, description, owner, editor, parent )
+		{
 		}
 
-		ServerQuest::~ServerQuest() {}
-
-		// CREATE
-		void ServerQuest::create_on_database() {
-			Query query(database, "INSERT INTO quest(caption, parent_id) VALUES (?, ?);");
-			query.bind(1, caption);
-			query.bind(2, parent ? static_cast<unsigned int>(parent->id) : 0);
-
-			if (!query.step_done()) {
-				throw UnableToCreateObjectException(caption);
-			}
+		ServerQuest::~ServerQuest()
+		{
 		}
 
-		// READ
-		void ServerQuest::read_on_database() {
-			Query query(database, "SELECT * FROM quest WHERE id = ?;");
-			query.bind(1, static_cast<unsigned int>(id));
+		void ServerQuest::create_on_database()
+		{
+			auto query = Query(database, "INSERT INTO quest(title, description, status, owner, editor, parent ) VALUES (?, ?, ?, ?, ?, ?);");
+			bind_all_parameters(query);
 
-			if (!query.step()) {
-				throw UnableToReadObjectException(std::to_string(id));
-			}
+			query.next_row();
+			if (!query.is_done())
+				throw UnableToCreateObjectException(title);
 
-			caption = query.get_text("caption");
-			int parent_id = query.get_int("parent_id");
-			if (parent_id != 0) {
-				parent = new Quest();
-				parent->id = parent_id;
-				// Optional: parent->read_on_database() rekursiv aufrufen
-			}
+			id = query.last_insert_rowid();
 		}
 
-		// UPDATE
-		void ServerQuest::update_on_database() {
-			Query query(database, "UPDATE quest SET caption = ?, parent_id = ? WHERE id = ?;");
-			query.bind(1, caption);
-			query.bind(2, parent ? static_cast<unsigned int>(parent->id) : 0);
-			query.bind(3, id);
-
-			if (!query.step_done()) {
-				throw UnableToUpdateObjectException(std::to_string(id));
-			}
-			
-		}
-
-		// DELETE
-		void ServerQuest::delete_on_database() {
-			Query query(database, "DELETE FROM quest WHERE id = ?;");
+		void ServerQuest::read_on_database(Id id)
+		{
+			auto query = Query(database, "SELECT id, title, description, status, owner, editor, parent FROM quest WHERE id=?;");
 			query.bind(1, id);
-
-			if (!query.step_done()) {
-				throw UnableToDeleteObjectException(std::to_string(id));
-			}
+			query.next_row();
+			if (!query.has_rows())
+				throw UnableToReadObjectException("quest: " + std::to_string(id) );
+			read_from_query(query);
 		}
 
+		void ServerQuest::update_on_database()
+		{
+			auto query = Query(database, "UPDATE quest set title=?, description=?, status=?, owner=?, editor=?, parent=? WHERE id=?;");
+			bind_all_parameters(query);
+			query.bind(7, id);
 
+			query.next_row();
+			if (!query.is_done())
+				throw UnableToCreateObjectException(title);
 
+			id = query.last_insert_rowid();
+		}
 
+		void ServerQuest::delete_on_database()
+		{
+			auto query = Query(database, "DELETE FROM quest WHERE id=?;");
+			query.bind(1, id);
+			query.next_row();
+			if (!query.is_done())
+				throw UnableToDeleteObjectException( "quest: " + std::to_string(id) );
+		}
 
-		std::string ServerQuest::class_id() {
+		std::string ServerQuest::class_id()
+		{
 			return "quest";
 		}
+		
+		// Used for these two queries:
+		// "UPDATE quest set title=?, description=?, status=?, owner=?, editor=?, parent=? WHERE id=?;"
+		// "INSERT INTO quest(title, description, status, owner, editor, parent ) VALUES (?, ?, ?, ?, ?, ?);"
+		void ServerQuest::bind_all_parameters(Query& query)
+		{
+			query.bind(1, title);
+			query.bind(2, description);
+			query.bind(3, status_to_string(status));
+			if (owner_id.has_value())
+				query.bind(4, owner_id.value());
+			else
+				query.bind_null(4);
 
+			if (editor_id.has_value())
+				query.bind(5, editor_id.value());
+			else
+				query.bind_null(5);
+
+			if (parent_id.has_value())
+				query.bind(6, parent_id.value());
+			else
+				query.bind_null(6);
+
+		}
+
+		void ServerQuest::read_from_query(Query& query)
+		{
+			id = query.int_value("id");
+			title = query.text_value("title");
+			description = query.text_value("description");
+			std::string status_string = query.text_value("status");
+			status = Quest::string_to_status(status_string);
+			owner_id = query.optional_int_value("owner");
+			editor_id = query.optional_int_value("editor");
+			parent_id = query.optional_int_value("parent");
+		}
 	}
 }

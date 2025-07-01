@@ -1,5 +1,7 @@
 #include "user.h"
 
+#include <stdlib.h>
+
 namespace Sidequest 
 {
 
@@ -7,17 +9,18 @@ namespace Sidequest
 	{
 	}
 
-	User::User( std::string email)
-		: email(email)
+	User::User(Id id)
+		:id(id)
 	{
 	}
 
 	User::User(std::string email, std::string display_name, std::string password)
-		: email(email), display_name(display_name), password(password)
+		: id(0), email(email), display_name(display_name), password(password)
 	{
 	}
 
 	User::~User()
 	{
 	}
+
 }

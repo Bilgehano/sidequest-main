@@ -28,5 +28,5 @@ namespace Sidequest
 			Database* database;
 		};
 
-	};
+	}
 }

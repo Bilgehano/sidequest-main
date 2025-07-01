@@ -1,95 +1,93 @@
 #include "server_user.h"
-#include "storage/query.h"
+
 #include "storage/database.h"
 
-namespace Sidequest
+#include <iostream>
+
+namespace Sidequest 
 {
-    namespace Server {
+	namespace Server 
+	{
+	
+		ServerUser::ServerUser(Database* database)
+			: Persistable(database)
+			, SerialisableUser()
+		{
+		}
 
-        // Standard-Konstruktor
-        ServerUser::ServerUser(Database* database)
-            : Persistable(database)
-        {
-        }
+		ServerUser::ServerUser(Database* database, Id id)
+			: Persistable(database)
+			, SerialisableUser(id)
+		{
+		}
 
-        // Konstruktor mit nur E-Mail
-        ServerUser::ServerUser(Database* database, std::string email)
-            : Persistable(database)
-            , User(email)
-        {
-        }
+		ServerUser::ServerUser(Database* database, std::string email, std::string display_name, std::string password)
+			: Persistable(database)
+			, SerialisableUser(email, display_name, password)
+		{
+		}
 
-        //Fehlender Konstruktor mit allen Feldern
-        ServerUser::ServerUser(Database* database, std::string email, std::string display_name, std::string password)
-            : Persistable(database)
-            , User(email, display_name, password)
-        {
-        }
+		ServerUser::~ServerUser()
+		{
+		}
 
-        // Destruktor
-        ServerUser::~ServerUser()
-        {
-        }
+		void ServerUser::create_on_database()
+		{
+			auto query = Query(database, "INSERT INTO user(email, display_name, password) VALUES (?, ?, ?);" );
+			query.bind( 1, email );
+			query.bind( 2, display_name );
+			query.bind( 3, password );
+			query.next_row();
+			if (!query.is_done())
+				throw UnableToCreateObjectException(email);
+			id = query.last_insert_rowid();
+		}
 
-        // CREATE
-        void ServerUser::create_on_database()
-        {
-            Query query(database, "INSERT INTO user(email, display_name, password) VALUES (?, ?, ?);");
-            query.bind(1, email);
-            query.bind(2, display_name);
-            query.bind(3, password);
+		void ServerUser::read_on_database(Id id)
+		{
+			auto query = Query(database, "SELECT * FROM user WHERE id = ?;");
+			query.bind( 1, id );
+			query.next_row();
+			if ( ! query.has_rows() )
+				throw UnableToReadObjectException(email);
+			this->id = id;
+			read_from_query( query );
+		}
 
-            if (!query.step_done()) {
-                throw UnableToCreateObjectException(email);
-            }
-        }
+		void ServerUser::update_on_database()
+		{
+			auto query = Query(database, "UPDATE user set email=?, display_name=?, password=? WHERE id=?;");
+			query.bind( 1, email);
+			query.bind( 2, display_name);
+			query.bind( 3, password);
+			query.bind( 4, id);
+			query.next_row();
+			if (! query.is_done() )
+				throw UnableToUpdateObjectException(email);
+		}
 
-        // READ
-        void ServerUser::read_on_database()
-        {
-            Query query(database, "SELECT * FROM user WHERE email = ?;");
-            query.bind(1, email);
+		void ServerUser::delete_on_database()
+		{
+			auto query = Query(database, "DELETE FROM user WHERE id=?;");
+			query.bind( 1, id );
+			query.next_row();
+			if (!query.is_done())
+				throw UnableToDeleteObjectException(email);
+			if (query.changes() != 1)
+				throw UnableToDeleteObjectException(email);
+		}
 
+		void ServerUser::read_from_query( Query& query )
+		{
+			display_name = query.text_value("display_name");
+			email = query.text_value("email");
+			password = query.text_value("password");
+		}
 
+		std::string ServerUser::class_id()
+		{
+			return "user";
+		}
 
-
-            if (!query.step()) {
-                throw UnableToReadObjectException(email);
-            }
-
-            display_name = query.get_text("display_name");
-            password = query.get_text("password");
-        }
-
-        // UPDATE
-        void ServerUser::update_on_database()
-        {
-            Query query(database, "UPDATE user SET display_name = ?, password = ? WHERE email = ?;");
-            query.bind(1, display_name);
-            query.bind(2, password);
-            query.bind(3, email);
-
-            if (!query.step_done()) {
-                throw UnableToUpdateObjectException(email);
-            }
-        }
-
-        // DELETE
-        void ServerUser::delete_on_database()
-        {
-            Query query(database, "DELETE FROM user WHERE email = ?;");
-            query.bind(1, email);
-
-            if (!query.step_done()) {
-                throw UnableToDeleteObjectException(email);
-            }
-        }
-
-        // ID-Kennung für Typ
-        std::string ServerUser::class_id()
-        {
-            return "user";
-        }
-
-    }
+	}
 }

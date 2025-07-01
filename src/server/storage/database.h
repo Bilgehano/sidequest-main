@@ -55,6 +55,7 @@ namespace Sidequest
 		class Database
 		{
 		public:
+<<<<<<< HEAD
 			Database(std::string filepath_of_database);
 			~Database();
 
@@ -69,13 +70,23 @@ namespace Sidequest
 
 			int read_int_value(PreparedStatement* prepared_statement, std::string column_name);
 			std::string read_text_value(PreparedStatement* prepared_statement, std::string column_name);
+=======
+			Database( std::string url );
+			~Database();
+
+			int execute_sql_statement(std::string sql_statement);
+>>>>>>> sidequest-ref/feature/fetch_quests
 
 			StatementCache* statement_cache;
 			ColumnCache* column_cache;
 
 		protected:
+<<<<<<< HEAD
 			void open(std::string filepath_of_database);
 			void initialize_schema();
+=======
+			void open( std::string url );
+>>>>>>> sidequest-ref/feature/fetch_quests
 			void close();
 
 		protected:
@@ -83,7 +94,14 @@ namespace Sidequest
 			sqlite3* handle = nullptr;
 
 			friend class StatementCache;
+<<<<<<< HEAD
 		};
 
 	};
+=======
+			friend class Query;
+		};
+
+	}
+>>>>>>> sidequest-ref/feature/fetch_quests
 }
