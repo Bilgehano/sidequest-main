@@ -7,14 +7,15 @@
   },
   "ExpandedNodes": [
     "",
-    "\\application_root",
+    "\\cmake",
+    "\\dependencies",
+    "\\src",
     "\\src\\server",
-    "\\src\\server\\model",
     "\\src\\server\\storage",
     "\\src\\sidequest",
     "\\src\\sidequest\\controller",
-    "\\src\\sidequest\\model"
+    "\\src\\sidequest\\model",
+    "\\src\\unit_tests"
   ],
-  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
