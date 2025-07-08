@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/build/cmake_install.cmake",
+		"/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/build/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
