@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsidequest_lib.a CMakeFiles/sidequest_lib.dir/src/sidequest/model/quest.cpp.o CMakeFiles/sidequest_lib.dir/src/sidequest/model/user.cpp.o CMakeFiles/sidequest_lib.dir/src/sidequest/network/json_serialisable.cpp.o CMakeFiles/sidequest_lib.dir/src/sidequest/network/serialisable_quest.cpp.o CMakeFiles/sidequest_lib.dir/src/sidequest/network/serialisable_user.cpp.o
+/usr/bin/ranlib libsidequest_lib.a

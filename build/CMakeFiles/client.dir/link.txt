@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/client.dir/src/client/main.cpp.o -o client   -L/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/dependencies  -Wl,-rpath,/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/dependencies libsidequest_lib.a libclient_lib.a -lsqlite3

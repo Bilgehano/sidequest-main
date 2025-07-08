@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/server.dir/src/server/main.cpp.o -o server   -L/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/dependencies  -Wl,-rpath,/Users/tomgallo/Desktop/GITHUB/Repositories/NEU/sidequest-main/dependencies libsidequest_lib.a libserver_lib.a -lsqlite3
